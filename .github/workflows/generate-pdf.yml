@@ -6,9 +6,6 @@ on:
     paths:
       - 'cv/**/*.md'
 
-permissions:
-  contents: write
-
 jobs:
   build-pdf:
     runs-on: ubuntu-latest
@@ -61,21 +58,9 @@ jobs:
             pandoc "$file" -o "$pdf_file" --pdf-engine=wkhtmltopdf
           done <<< "$CHANGED_FILES"
 
-      - name: Commit and push generated PDFs
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          # Configure bot identity for CI commits
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add cv/*.pdf || true
-
-          if git diff --cached --quiet; then
-            echo "No PDF changes to commit."
-            exit 0
-          fi
-
-          git commit -m "chore: regenerate PDF files from Markdown"
-          git push
+      - name: Upload PDFs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdfs
+          path: cv/*.pdf
+          if-no-files-found: ignore
