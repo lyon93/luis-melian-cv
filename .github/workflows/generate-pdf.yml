@@ -1,0 +1,67 @@
+name: Generate PDF from Markdown
+
+on:
+  push:
+    paths:
+      - 'cv/**/*.md'
+
+permissions:
+  contents: write
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc wkhtmltopdf
+
+      - name: Detect changed Markdown files
+        id: changed
+        shell: bash
+        run: |
+          BEFORE_SHA="${{ github.event.before }}"
+          AFTER_SHA="${{ github.sha }}"
+
+          if [[ "$BEFORE_SHA" == "0000000000000000000000000000000000000000" ]]; then
+            CHANGED_FILES=$(git ls-files | grep -E '^cv/.*\.md$' || true)
+          else
+            CHANGED_FILES=$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA" | grep -E '^cv/.*\.md$' || true)
+          fi
+
+          {
+            echo 'files<<EOF'
+            echo "$CHANGED_FILES"
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Generate PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHANGED_FILES="${{ steps.changed.outputs.files }}"
+
+          if [[ -z "$CHANGED_FILES" ]]; then
+            echo "No Markdown files changed in cv/."
+            exit 0
+          fi
+
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+            pdf_file="${file%.md}.pdf"
+            echo "Generating $pdf_file from $file"
+            pandoc "$file" -o "$pdf_file" --pdf-engine=wkhtmltopdf
+          done <<< "$CHANGED_FILES"
+
+      - name: Commit and push generated PDFs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: regenerate PDF files from Markdown'
+          file_pattern: 'cv/*.pdf'

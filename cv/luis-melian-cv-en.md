@@ -8,7 +8,7 @@ melian.luis25@gmail.com
 ## Experience
 
 ### Software Engineer - Salsa  
-**October 2025 – Present**
+**October 2025 – March 2026**
 
 - Developing and maintaining scalable fintech products focused on payroll infrastructure.  
 - Building and evolving backend services using Kotlin / Java with Spring, following clean architecture and best practices.  

@@ -34,3 +34,15 @@ luis-melian-cv
 3. Open the `cv` directory to find the CV files in both English and Spanish.
 
 4. To view the CV, you can open the Markdown files in a Markdown viewer or convert them to PDF using a Markdown to PDF tool.
+
+## Automatic PDF Generation on Push
+
+This repository includes a GitHub Actions workflow at `.github/workflows/generate-pdf.yml`.
+
+- Trigger: every `push` that changes a Markdown file in `cv/`.
+- Behavior: for each changed `.md` file, the matching `.pdf` file is generated.
+- Replacement logic:
+   - If the PDF does not exist, it is created.
+   - If the PDF already exists, it is regenerated and replaced.
+
+Generated PDFs are committed and pushed back to the same branch automatically.
