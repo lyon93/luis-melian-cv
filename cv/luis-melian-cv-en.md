@@ -10,21 +10,17 @@ melian.luis25@gmail.com
 ### Software Engineer - Salsa  
 **October 2025 – March 2026**
 
-- Developing and maintaining scalable fintech products focused on payroll infrastructure.  
-- Building and evolving backend services using Kotlin / Java with Spring, following clean architecture and best practices.  
-- Designing and implementing robust, developer-friendly APIs, ensuring reliability, performance, and security.  
-- Collaborating closely with product and design teams to deliver high-impact features.  
+- Developed payroll and accounting platform features using Kotlin, Spring Boot, GraphQL, and PostgreSQL within an event-driven architecture, following hexagonal architecture principles.
 - Working with AWS infrastructure, CI/CD pipelines, and automated testing.  
 - Contributing to architectural decisions in a fast-growing startup environment.  
-- Participating in code reviews, technical discussions, and continuous improvement initiatives.  
 
 ---
 
 ### Software Engineer — RTVE Play  
 **September 2023 – October 2025**
 
-- Developed an admin tool to manage user subscriptions for the RTVE Play platform.  
-- Enhanced and optimized the web player for streaming all RTVE media, including Video on Demand (VOD) and live broadcasts.  
+- Developed an internal admin platform for managing RTVE Play user subscriptions, integrating with backend REST APIs, third-party payment APIs, and a MariaDB database handling 1000+ subscription records.
+- Enhanced and optimized the RTVE Play web video player for live and Video on Demand (VOD) streaming, improving playback performance and resolving critical issues affecting user experience.
 
 ---
 
@@ -32,51 +28,41 @@ melian.luis25@gmail.com
 **October 2022 – June 2023**
 
 - Led the migration from DynamoDB to MongoDB, reducing operational costs by 25% while improving database performance.  
-- Designed and implemented scalable and reliable backend systems using Node.js and Express.js.  
-- Developed and maintained web applications and APIs, ensuring optimal performance and security.  
-- Built responsive and accessible user interfaces with Next.js, enhancing user experience across devices.  
-- Implemented CI/CD pipelines using GitLab, streamlining deployment processes and reducing downtime.  
+- Designed and implemented backend services using Node.js and Express.js integrating with third-party marketplace APIs (Amazon, Wallapop, Todocoleccion), building background jobs to automatically publish and synchronize 5,000+ product listings across multiple platforms.  
+- Built an internal back-office platform using Next.js and MongoDB enabling operational teams to manage and classify product listings while monitoring an inventory of 100k+ products in real time.
 
 ---
 
 ### Software Engineer — Zemsania Global Group  
 **July 2022 – October 2022**
 
-- Developed highly scalable microservices for the sales team using Java 11, Spring Boot, and Maven.  
-- Implemented CI/CD pipelines using GitHub Actions, enabling automated testing and deployments.  
-- Reduced development cycles while ensuring deployable code at all times.  
+- Developed new functionalities for the Inditex Orders and Returns platform using Java 11/17, following event-driven and hexagonal architecture principles. 
+- Designed and implemented the end-to-end integration with a third-party marketplace, defining OpenAPI specifications and consuming external APIs to process and synchronize millions of marketplace records with internal services.
 
 ---
 
 ### Full Stack Developer — EBN Banco Madrid  
 **July 2021 – June 2022**
 
-- Developed interactive and responsive web pages using HTML, CSS, JavaScript, and Angular v6.  
-- Enhanced core banking systems with Spring Boot, Java 8, and Maven.  
-- Designed and implemented ETL processes for efficient data integration.  
-- Defined RESTful APIs following the OpenAPI 3.0 specification.  
-- Automated file transfer processes using Bash scripts and SFTP.  
-- Collaborated closely with clients to gather and analyze requirements.  
-
+- Contributed to the development of a digital investment platform enabling private investors to manage portfolios, assess risk profiles, access fund information, and manage accounts using Java 8, Spring Boot, and Oracle Database.
+- Developed new features for financial products including reverse mortgages, loans, and billing systems used by 500+ banking customers using Java 8, Spring Boot, and Sybase.
+- Built scripting and ETL processes for regulatory and banking integrations, processing large financial data files containing 1M+ records using Bash scripting and relational databases (Oracle, Sybase).
 ---
 
 ### Full Stack Developer — APARA Madrid  
 **November 2020 – September 2021**
 
-- Developed responsive web applications using HTML, CSS, JavaScript, and Angular v6.  
-- Built new functionalities for core banking systems using Spring Boot, Java 8, and Maven.  
-- Designed and implemented ETL processes for data management and integration.  
-- Defined RESTful APIs using OpenAPI 3.0.  
-- Automated operational workflows with Bash scripts and SFTP.  
-- Worked directly with clients to align solutions with business requirements.  
+- Contributed to the development of a digital investment platform enabling private investors to manage portfolios, assess risk profiles, access fund information, and manage accounts using Java 8, Spring Boot, and Oracle Database.
+- Developed new features for financial products including reverse mortgages, loans, and billing systems used by 500+ banking customers using Java 8, Spring Boot, and Sybase.
+- Built scripting and ETL processes for regulatory and banking integrations, processing large financial data files containing 1M+ records using Bash scripting and relational databases (Oracle, Sybase).
 
 ---
 
-### Full Stack Developer — EVERIS Alicante  
+### Full Stack Developer — EVERIS Alicante (Client: Banco Santander)  
 **August 2020 – November 2020**
 
-- Developed new features for Banco Santander applications using Java, Spring Boot, Maven, and MongoDB.  
-- Enhanced back-office applications with Angular v8, improving usability and access to documents.  
+- Developed a back-office document management system using Angular, Java v8, Spring Boot and MongoDB for the persistence layer; enabling Santander employees to access and manage internal documents.
+- Improved usability and document accessibility by simplifying workflows previously handled through the FileNet platform.
 
 ---
 
@@ -92,8 +78,7 @@ melian.luis25@gmail.com
 
 **Languages:** Java (v8, v11, v17), JavaScript, TypeScript  
 **Frameworks:** Spring Boot, Spring Framework, Node.js, Express.js, Next.js  
-**Databases:** MySQL, Oracle, SQL Server, MongoDB  
-**APIs:** OpenAPI  
+**Databases:** MySQL, Oracle, SQL Server, MongoDB, PostgreSQL, MariaDB
 **CI/CD:** GitLab CI, GitHub Actions  
 
 ---
@@ -101,7 +86,7 @@ melian.luis25@gmail.com
 ## Certifications
 
 **AWS Certified Cloud Practitioner — Amazon Web Services**  
-Issued: February 2022 · Expires: February 2025  
+Issued: February 2022 
 
 ---
 
