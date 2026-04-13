@@ -1,7 +1,9 @@
 # Luis Melian
 
-**Spain**  
-melian.luis25@gmail.com  
+📍 España  
+✉️ melian.luis25@gmail.com  
+💼 https://www.linkedin.com/in/luis-melian/
+
 
 ---
 
@@ -42,20 +44,11 @@ melian.luis25@gmail.com
 ---
 
 ### Full Stack Developer — EBN Banco Madrid  
-**July 2021 – June 2022**
+**November 2020 – June 2022**
 
 - Contributed to the development of a digital investment platform enabling private investors to manage portfolios, assess risk profiles, access fund information, and manage accounts using Java 8, Spring Boot, and Oracle Database.
 - Developed new features for financial products including reverse mortgages, loans, and billing systems used by 500+ banking customers using Java 8, Spring Boot, and Sybase.
 - Built scripting and ETL processes for regulatory and banking integrations, processing large financial data files containing 1M+ records using Bash scripting and relational databases (Oracle, Sybase).
----
-
-### Full Stack Developer — APARA Madrid  
-**November 2020 – September 2021**
-
-- Contributed to the development of a digital investment platform enabling private investors to manage portfolios, assess risk profiles, access fund information, and manage accounts using Java 8, Spring Boot, and Oracle Database.
-- Developed new features for financial products including reverse mortgages, loans, and billing systems used by 500+ banking customers using Java 8, Spring Boot, and Sybase.
-- Built scripting and ETL processes for regulatory and banking integrations, processing large financial data files containing 1M+ records using Bash scripting and relational databases (Oracle, Sybase).
-
 ---
 
 ### Full Stack Developer — EVERIS Alicante (Client: Banco Santander)  
@@ -85,8 +78,7 @@ melian.luis25@gmail.com
 
 ## Certifications
 
-**AWS Certified Cloud Practitioner — Amazon Web Services**  
-Issued: February 2022 
+**AWS Certified Cloud Practitioner — Amazon Web Services**
 
 ---
 
