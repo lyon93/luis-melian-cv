@@ -1,6 +1,6 @@
 # Luis Melian
 
-📍 España  
+📍 Spain  
 ✉️ melian.luis25@gmail.com  
 💼 https://www.linkedin.com/in/luis-melian/
 
